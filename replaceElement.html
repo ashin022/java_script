@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    //replacechild()..............................
+    <div id="box">
+        <p id="old">old paragraph</p>
+    </div>
+
+    <script>
+        let newE1 = document.createElement("p")
+        newE1.innerText = "this is my new paragraph"
+
+        let parent = document.getElementById("box")
+        let oldE1 = document.getElementById("old")
+        parent.replacechild(newE1,oldE1)
+    </script>
+// replacewith()..................................
+
+    <p id="old">old paragraph</p>
+    <script>
+        let newE1 = document.createElement('p')
+        newE1.innerText = "this is my new para"
+        // let oldE1= document.getElementById('old')
+        //oldE1.replaceWith(newE1)
+        document.getElementById("old").replaceWith(newE1)
+    </script>
+</body>
+</html>

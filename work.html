@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <script>
+        //2. Factorial of a user-entered number
+        let n = Number(prompt("Enter a number:"));
+        let fact = 1;
+        for (let i = 1; i <= n; i++) {
+            fact = fact * i;
+        }
+        console.log("Factorial =", fact);
+    </script> -->
+
+
+
+    <!-- <script>
+        // 3. Check whether a number is a palindrome
+        let n = Number(prompt("Enter a number:"));
+        let original = n;
+        let reverse = 0;
+        while (n > 0) {
+        let digit = n % 10;
+        reverse = reverse * 10 + digit;
+        n = Math.floor(n / 10);
+    }
+    if (original === reverse) {
+        console.log("Palindrome");
+    } else {
+        console.log("Not Palindrome");
+    }
+    </script> -->
+
+
+
+    <!-- <script>
+        // 4. Check whether a number is an Armstrong number
+        let n = Number(prompt("Enter a number:"));
+        let original = n;
+        let sum = 0;
+        let digits = n.toString().length;
+        while (n > 0) {
+            let digit = n % 10;
+            sum = sum + digit ** digits;
+            n = Math.floor(n / 10);
+        }
+        if (sum === original) {
+            console.log("Armstrong number");
+        } else {
+            console.log("Not an Armstrong number");
+        }
+    </script> -->
+
+
+
+    <!-- <script>
+        // 5. Fibonacci series up to n terms
+        let n = Number(prompt("Enter number of terms:"));
+        let a = 0;
+        let b = 1;
+        for (let i = 1; i <= n; i++) {
+            console.log(a);
+            let c = a + b;
+            a = b;
+            b = c;
+        }
+        
+    </script> -->
+
+
+    <!-- <script>
+        // 8. Count vowels in a string
+        let str = prompt("Enter a string:");
+        let count = 0;
+        for (let i = 0; i < str.length; i++) {
+            let ch = str[i].toLowerCase();
+            if (
+                ch === "a" ||
+                ch === "e" ||
+                ch === "i" ||
+                ch === "o" ||
+                ch === "u"
+            ) {
+                count++;
+            }
+        }
+        console.log("Vowels =", count);
+    </script> -->
+
+
+    <!-- <script>
+        // 9. Count consonants in a string
+        let str = prompt("Enter a string:");
+        let count = 0;
+        for (let i = 0; i < str.length; i++) {
+            let ch = str[i].toLowerCase();
+            if (
+                ch >= "a" && ch <= "z" &&
+                ch !== "a" &&
+                ch !== "e" &&
+                ch !== "i" &&
+                ch !== "o" &&
+                ch !== "u"
+            ) {
+                count++;
+            }
+        }
+        console.log("Consonants =", count);
+    </script> -->
+
+
+    <!-- <script>
+        // 10. Reverse each word in a sentence
+        let sentence = prompt("Enter a sentence:");
+        let words = sentence.split(" ");
+        for (let i = 0; i < words.length; i++) {
+            let reverse = "";
+            for (let j = words[i].length - 1; j >= 0; j--) {
+                reverse = reverse + words[i][j];
+            }
+            words[i] = reverse;
+        }
+        console.log(words.join(" "));
+    </script> -->
+
+
+    <!-- <script>
+        // 16. Multiplication table of a user-entered number
+        let n = Number(prompt("Enter a number:"));
+        for (let i = 1; i <= 10; i++) {
+            console.log(n + " x " + i + " = " + (n * i));
+        }
+    </script> -->
+
+
+    <!-- <script>
+        // 17. Count vowels in a string
+        let str = prompt("Enter a string:");
+        let count = 0;
+        for (let i = 0; i < str.length; i++) {
+            if ("aeiouAEIOU".includes(str[i])) {
+                count++;
+            }
+        }
+        console.log("Vowels =", count);
+    </script> -->
+
+
+    <!-- <script>
+        // 20. Reverse a string using a loop
+        let str = prompt("Enter a string:");
+        let reverse = "";
+        for (let i = str.length - 1; i >= 0; i--) {
+            reverse = reverse + str[i];
+        }
+        console.log("Reverse =", reverse);
+    </script> -->
+
+
+    <!-- <script>
+        // 21. Check whether a number is prime
+        let n = Number(prompt("Enter a number:"));
+        let prime = true;
+        if (n < 2) {
+            prime = false;
+        }
+        for (let i = 2; i < n; i++) {
+            if (n % i === 0) {
+                prime = false;
+                break;
+            }
+        }
+        if (prime) {
+            console.log("Prime");
+        } else {
+            console.log("Not Prime");
+        }
+    </script> -->
+
+
+    <!-- <script>
+        // If cart value is ₹1000 or more, shipping is free; otherwise charge ₹100.
+        let cartValue = Number(prompt("Enter cart value:"));
+        if (cartValue >= 1000) {
+            console.log("Free Shipping");
+        } else {
+            console.log("Shipping Charge = ₹100");
+        }
+    </script> -->
+
+    <!-- <script>
+        // 2. Check Whether a Number is Divisible by 5
+        let num = Number(prompt("Enter a number:"));
+        if (num % 5 === 0) {
+            console.log("Number is divisible by 5");
+        } else {
+            console.log("Number is not divisible by 5");
+        }
+    </script> -->
+
+
+    <!-- <script>
+        // Check whether the password has at least 8 characters.
+        let password = prompt("Enter password:");
+        if (password.length >= 8) {
+            console.log("Password is valid");
+        } else {
+            console.log("Password must contain at least 8 characters");
+        }
+    </script> -->
+
+
+    <script>
+        // Display "Morning" if hour < 12; otherwise display "Afternoon".
+        let hour = Number(prompt("Enter hour:"));
+        if (hour < 12) {
+            console.log("Morning");
+        } else {
+            console.log("Afternoon");
+        }
+    </script>
+</body>
+</html>

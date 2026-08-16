@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+      let p = document.createElement("p")
+      //  p.innerText = "new paragraph"
+      //  document.body.appendChild(p)
+      document.body.append("new paraaaaa")
+    </script>
+
+    // appendchild-element/node only append -text/string +element//
+
+    // inside a specific div//
+
+    <div id="box"></div>
+    
+    <script>
+        let head = document.createElement('h2')
+        head.innerText = "new heading"
+        document.getElementById('box').appendChild(head)  
+    </script>
+//------prepend()-add at beginning--------
+
+    <p>element 1</p>
+
+    <script>
+        let e1 = document.createElement("p");
+        el.innerText = "first element"
+        document.body.prepend(el)
+
+    </script>
+//---insertbefore()- insert before another element 
+    <ul id="list">
+        <li>item 1</li>
+    </ul>
+
+    <script>
+        let li = document.createElement("li")
+        li.innerText = "new item"
+
+        let list = document.getElementById("list")
+        list.insertBefore(li,list.firstChild)
+    </script>
+</body>
+</html>
