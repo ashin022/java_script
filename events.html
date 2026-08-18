@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    // click event..................
+
+    <button id="btn">click me</button>
+
+    <script>
+        let btn =document.getElementById("btn")
+        btn.addEventListener('click',function(){
+            alert("button clicked")
+        })
+    </script>
+
+    <p id="text">hello world</p>
+    <button id="textbtn">change text</button>
+    <script>
+        let textbtn = document.getElementById('textbtn')
+        let text = document.getElementById("text")
+
+        textbtn.addEventListener('click',function(){
+            text.textContent= "text has been changhed"
+        })
+    </script>
+
+    // input event.........................
+
+    <input type="text" id="input">
+
+    <script>
+        let input = document.getElementById("input")
+        input.addEventListener("input",function(){
+            console.log("input value:",input.value);
+        })
+    </script>
+</body>
+</html>
