@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <form class="contact-form" action="#">
+      <input type="text" placeholder="Full Name" id="name">
+      <span class="error" id="nameerror"></span>
+      <input type="email" placeholder="Email Address" id="email">
+      <span class="error" id="emailerror"></span>
+      <input type="file" placeholder="resume" id="file">
+      <span class="error" id="resumeerror"></span>
+      <textarea placeholder=" your message here..." class="forn-input" id="tarea"></textarea>
+      <input type="submit" value="register" class="button submit-button" id="contact_submit"> 
+    </form>
+
+    <script>
+        document.getElementById("form").addEventListener("submit",function (event){
+            var username = document.getElementById("name").value.trim();
+            var email = document.getElementById("email").value.trim();
+            var file= document.getElementById("file");
+            var usernameerror = document.getElementById("nameerror");
+            var emailerror = document.getElementById("emailerror");
+            var resumeerror = document.getElementById("resumeerror");
+            usernameerror.textContent="";
+            emailerror.textContent="";
+            resumeerror.textContent="";
+
+            var isvalid = true;
+            //username validation
+            if (username ===""){
+                usernameerror.textContent = "Must have a username";
+                isvalid = false;
+            }
+            // email validation
+
+            var emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+            if (email === ""){
+                emailerror.textContent = "email is required";
+                isvalid = false;
+            } else if  (!emailPattern.test(email)){
+                emailerror.textContent = "invalid email form";
+                isvalid = false;
+            }
+            if(file.files.length === 0){
+                resumeerror.textContent ="must have a resume";
+                isvalid = false;
+            }
+            if (!isvalid){
+                return;
+            }
+            alert("form submitted successfully!");
+            document.getElementById("form").rest();
+        });
+    </script>
+  </section> 
+</body>
+</html>
