@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .oldbox{
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+        }
+        .newbox{
+            width: 100px;
+            height: 100px;
+            background-color: brown;
+        }
+    </style>
+</head>
+<body>
+
+    //class name...........................
+
+    <!-- <div id="box" class="oldbox"></div>
+    <script>
+        document.getElementById('box').className ="newbox"
+        let e1 = document.getElementById("box")
+        console.log(e1.className);
+    </script> -->
+
+
+    //classlist add  &  remove...............
+
+    <div id="box" class="oldbox"></div>
+    <script>
+        let e1 = document.getElementById("box")
+        e1.classList.add("newbox")
+        console.log(e1.className);
+        e1.classList.remove("oldbox")
+        console.log(e1.className);
+    </script>
+
+    //class list.toggle.......................
+
+    <div id="box" class="oldbox"></div>
+    <script>
+        let e2 = document.getElementById("box")
+        e2.classList.toggle("newbox")
+        e2.classList.toggle("newbox")
+    </script>
+</body>
+</html>

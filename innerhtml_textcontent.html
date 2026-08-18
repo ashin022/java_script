@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="data">
+        <h2>hello html</h2>
+        <h2 style="display: none;">hello css</h2>
+        <h2>hello js</h2>
+    </div>
+
+    <script>
+        //inner html...................
+
+        let text =document.getElementById("data")
+        console.log(text.innerHTML);
+        text.innerHTML = "<u>welcome to js</u>"
+
+    // innertext..................
+
+    let text =document.getElementById("data")
+        console.log(text.innerText);
+        text.innerText = "<u>welcome to js</u>"
+        console.log(text.innerText);
+
+        //text content........................
+
+        let text =document.getElementById("data")
+        console.log(text.textContent);
+        text.textContent = "<u>welcome to js</u>"
+        console.log(text.textContent);
+
+    </script>
+</body>
+</html>
