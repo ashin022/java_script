@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .newclass{
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <!..getattribute....>
+    <input type="text" id="username" class="input">
+
+    <script>
+        let input = document.getElementById("username")
+        console.log(input.getAttribute("type"));
+        console.log(input.getAttribute("id"));
+        console.log(input.getAttribute("class"));
+    </script>
+    <input type="text" name="name" id="username">
+    <script>
+        //element.setattribut("attributname","valuue");//syntax
+        let input1 = document.getElementById("username");
+        input1.setAttribute("class","newclass");
+        input1.setAttribute("name","newname");
+    </script>
+</body>
+</html>

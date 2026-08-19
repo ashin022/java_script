@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <img id="bulb" src="https://www.homenish.com/wp-content/uploads/2020/09/incandescent-lighted-bulb-768x1152.jpg" width="100px" height="100px">
+     <button onclick="bright()">on</button>
+     <button onclick="dark()">off</button>
+  <script>
+    function bright(){
+        document.getElementById("bulb").src = "https://media.gettyimages.com/id/460717701/vector/light-bulb-artwork.jpg?s=612x612&w=gi&k=20&c=alRmSB7c-E5h7zoIwuJ71lHkQd7Ry1Pimw556ibXgSg="
+    }
+
+    function dark(){
+        document.getElementById("bulb").src = "https://www.homenish.com/wp-content/uploads/2020/09/incandescent-lighted-bulb-768x1152.jpg"
+    }
+
+  </script>
+</body>
+</html>
