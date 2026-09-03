@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<!-- MOUSE EVENT -->
+
+     <button id="btn">Click Me</button>
+
+    <script>
+        let button = document.getElementById("btn");
+
+        button.addEventListener("mouseup", function() {
+        alert("Mouse button clicked!");
+
+});
+
+</script> 
+
+
+
+<!-- KEYBOARD EVENT -->
+
+    <input type="text" id="keyboard" placeholder="Type something">
+
+    <script>
+        let input = document.getElementById("keyboard");
+
+        input.addEventListener("keypress", function() {
+        console.log("A key was pressed");
+
+});
+
+</script>
+
+
+
+<!-- FORM EVENT -->
+
+<form id="myForm">
+
+    <input type="text" placeholder="Enter your name">
+    <button type="submit">Submit</button>
+    </form>
+
+    <script>
+        let form = document.getElementById("myForm");
+
+        form.addEventListener("submit", function(event) {
+        event.preventDefault();
+        alert("Form submitted successfully!");
+});
+
+</script>
+
+
+
+
+<!-- INPUT EVENT -->
+
+    <input type="text" id="name" placeholder="Enter your name">
+
+    <p id="output"></p>
+
+    <script>
+        let nameInput = document.getElementById("name");
+        let output = document.getElementById("output");
+
+        nameInput.addEventListener("input", function() {
+        output.innerHTML = "You entered: " + nameInput.value;
+});
+
+</script>
+
+</body>
+</html>
