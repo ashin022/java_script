@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Profile Card</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="student-card" id="studentCard">
+        <h2 id="studentName">viki</h2>
+        <p>Age: <span id="studentAge">21</span></p>
+        <p>Course: <span class="course" id="courseName">MERN Stack Development</span></p>
+
+        <h3>Skills</h3>
+        <ul id="skillsList">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+        </ul>
+
+        <div class="buttons">
+            <!-- Group 1: Profile Actions -->
+            <button id="changeName">Change Name</button>
+            <button id="changeCourse">Change Course</button>
+            <button id="showDetails">Show Details</button>
+
+            <!-- Group 2: Style Actions -->
+            <button id="highlight">Highlight</button>
+            <button id="removeHighlight">Remove Highlight</button>
+            <button id="toggleTheme">Toggle Theme</button>
+
+            <!-- Group 3: Skills Actions -->
+            <button id="addSkill">Add Skill</button>
+            <button id="removeSkill">Remove Skill</button>
+            <button id="replaceSkill">Replace Skill</button>
+        </div>
+
+        <div id="details"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

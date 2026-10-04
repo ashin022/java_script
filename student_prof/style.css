@@ -1,0 +1,53 @@
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: sans-serif; }
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #f1f5f9;
+    transition: 0.3s;
+}
+body.dark { background: #0f172a; }
+
+.student-card {
+    background: white;
+    width: 380px;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+.student-card.highlight {
+    border: 3px solid #f59e0b;
+    background: #fffbeb;
+    transform: scale(1.02);
+}
+.student-card h2 { color: #1e293b; margin-bottom: 10px; }
+.student-card p { margin: 5px 0; color: #334155; }
+.student-card h3 { margin: 15px 0 8px; }
+#skillsList { margin-left: 20px; margin-bottom: 15px; }
+#skillsList li { margin: 4px 0; }
+
+.buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+    margin-top: 15px;
+}
+.buttons button {
+    padding: 8px;
+    border: none;
+    border-radius: 6px;
+    background: #1e293b;
+    color: white;
+    cursor: pointer;
+    font-size: 13px;
+}
+.buttons button:hover { background: #334155; }
+#details {
+    margin-top: 15px;
+    padding: 10px;
+    background: #e2e8f0;
+    border-radius: 8px;
+    display: none;
+}
